@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "flight_affinity",
+	"version": "${version}",
+	"name": "Flight Affinity",
+	"description": "Armor enchantment that removes the mining speed penalty while not on the ground (similar role to Aqua Affinity for water).",
+	"authors": [
+		"Governance Nexus"
+	],
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"flightaffinity.FlightAffinityMod"
+		]
+	},
+	"mixins": [
+		"flight_affinity.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
