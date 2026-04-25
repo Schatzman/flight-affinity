@@ -25,3 +25,5 @@ Output: `build/libs/flight-affinity-<version>.jar`
 - Minecraft **1.20.1**
 - Fabric Loader **≥ 0.18.4** (see `gradle.properties` / `fabric.mod.json`)
 - [Fabric API](https://github.com/FabricMC/fabric) — **required** at runtime (`modImplementation` in `build.gradle`)
+
+**1.20.1 durability:** custom items use the vanilla `Unbreakable` stack NBT (set in `getDefaultInstance` + `inventoryTick` migration), not only `canBeDepleted()`.

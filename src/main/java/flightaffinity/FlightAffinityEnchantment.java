@@ -29,4 +29,12 @@ public class FlightAffinityEnchantment extends Enchantment {
 	public int getMaxCost(int level) {
 		return this.getMinCost(level) + 40;
 	}
+
+	/**
+	 * Keep in sync with {@code assets/flight_affinity/lang/en_us.json}.
+	 */
+	@Override
+	public String getDescriptionId() {
+		return "enchantment.flight_affinity.flight_affinity";
+	}
 }
